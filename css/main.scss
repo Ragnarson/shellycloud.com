@@ -19,6 +19,7 @@ h2 {
 
 .logo {
   @include img-replace('/img/img-logo.svg', 237px, 54px);
+  position: relative;
 }
 
 .navbar {
@@ -26,6 +27,18 @@ h2 {
   background-position: top center, top left, top right;
   background-repeat: no-repeat;
   background-size: auto, 50% $navbar-height, 50% $navbar-height;
+}
+
+.slogan {
+  position: absolute;
+  bottom: 0;
+  right: -165px;
+  text-indent: 0;
+  opacity: .5;
+
+  > a {
+    color: $color-white;
+  }
 }
 
 .thumbnail {
