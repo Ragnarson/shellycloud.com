@@ -7,6 +7,7 @@
 $font-family-base: "Source Sans Pro", sans-serif;
 $font-size-base: 16;
 $font-weight-headings: 400;
+$navbar-height: 75px;
 
 @import "hocus-pocus/hocus-pocus";
 
@@ -16,4 +17,15 @@ h1 {
 
 h2 {
   @include font-size(28);
+}
+
+.logo {
+  @include img-replace('/img/logo.svg', 237px, 54px);
+}
+
+.navbar {
+  background-image: url('/img/bg-navbar.png'), url('/img/bg-navbar-left.png'), url('/img/bg-navbar-right.png');
+  background-position: top center, top left, top right;
+  background-repeat: no-repeat;
+  background-size: auto, 50% $navbar-height, 50% $navbar-height;
 }
