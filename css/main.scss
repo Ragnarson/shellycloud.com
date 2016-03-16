@@ -2,6 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$rwd-type: desktop-first;
+$rwd-map: (mobile: 680px);
 $font-family-base: "Source Sans Pro", sans-serif;
 $font-size-base: 16;
 $font-weight-headings: 400;
