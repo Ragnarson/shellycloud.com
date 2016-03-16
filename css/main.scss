@@ -4,6 +4,16 @@
 
 @import "hocus-pocus/scss/colors";
 
-$font-family-base: sans-serif;
+$font-family-base: "Source Sans Pro", sans-serif;
+$font-size-base: 16;
+$font-weight-headings: 400;
 
 @import "hocus-pocus/hocus-pocus";
+
+h1 {
+  @include font-size(38);
+}
+
+h2 {
+  @include font-size(28);
+}
